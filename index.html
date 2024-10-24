@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
+    <meta charset="UTF-8">
     <title>Julia Baur Portfolio</title>
     <!-- Google Fonts einbinden -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@400&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
         h1 {
             color: #FFA686; /* Überschrift H1 in Rosaton */
             font-family: 'Oswald', sans-serif; /* Oswald für H1 */
-            font-size: 3.5rem; /* Deutlich größer als H2 */
+            font-size: 4rem; /* Deutlich größer als H2 */
             font-weight: 400;
         }
         h2 {
@@ -27,35 +28,33 @@
             font-size: 2rem; /* Grundgröße für H2 */
             margin-top: 20px;
         }
-        h3 {
-            color: #FFA686; /* Überschrift H3 in Rosaton */
-            font-family: 'Montserrat', sans-serif; /* Montserrat für H3 */
-            font-weight: 700; /* Bold für H3 */
-            text-transform: uppercase; /* Versalien für H3 */
-            font-size: 1.6rem; /* 20% kleiner als H2 */
-            margin-top: 20px;
-        }
-        h4 {
+        h3, h4, h5 {
             color: #FFA686;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             text-transform: uppercase;
-            font-size: 1.28rem; /* 20% kleiner als H3 */
             margin-top: 20px;
         }
-        h5 {
-            color: #FFA686;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 1.024rem; /* 20% kleiner als H4 */
-            margin-top: 20px;
-        }
+        h3 { font-size: 1.6rem; } /* 20% kleiner als H2 */
+        h4 { font-size: 1.28rem; } /* 20% kleiner als H3 */
+        h5 { font-size: 1.024rem; } /* 20% kleiner als H4 */
         ul {
             list-style-type: disc; /* Gefüllte Punkte für Listen */
         }
         ul li::marker {
             color: #FFA686; /* Farbe der Aufzählungszeichen auf Rosaton gesetzt */
+        }
+        table {
+            width: 100%; /* Tabelle auf 100% der Breite setzen */
+            border-collapse: collapse; /* Ränder der Zellen zusammenlegen */
+        }
+        td {
+            vertical-align: top; /* Vertikale Ausrichtung der Zellen */
+            padding: 20px; /* Innenabstand der Zellen */
+        }
+        img {
+            max-width: 100%; /* Bild responsiv machen */
+            height: auto; /* Höhe automatisch anpassen */
         }
     </style>
 </head>
@@ -70,25 +69,37 @@
         I bring extensive experience with Adobe CC tools, creative ideation, and growing expertise in UX design to optimize online and print media.
     </p>
     
-    <h2>Professional Skills</h2>
-    <ul>
-        <li>Art Direction</li>
-        <li>Creative Direction</li>
-        <li>Graphic Design</li>
-        <li>Retouching</li>
-        <li>Photography</li>
-        <li>Prepress</li>
-        <li>Artwork</li>
-    </ul>
-
-    <h2>Soft Skills</h2>
-    <ul>
-        <li>Strong comprehension skills and high willingness to learn</li>
-        <li>Enthusiasm and openness to new ideas</li>
-        <li>Experience in interdisciplinary functions</li>
-        <li>International team experience</li>
-        <li>Strong communication skills</li>
-        <li>Sense for industry trends</li>
-    </ul>
+    <table>
+        <tr>
+            <td rowspan="2"><img src="dein-bild-link.jpg" alt="Bildbeschreibung"></td> <!-- Bild hier einfügen -->
+            <td><h2>Professional Skills</h2></td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>Art Direction</li>
+                    <li>Creative Direction</li>
+                    <li>Graphic Design</li>
+                    <li>Retouching</li>
+                    <li>Photography</li>
+                    <li>Prepress</li>
+                    <li>Artwork</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><h2>Soft Skills</h2></td>
+            <td>
+                <ul>
+                    <li>Strong comprehension skills and high willingness to learn</li>
+                    <li>Enthusiasm and openness to new ideas</li>
+                    <li>Experience in interdisciplinary functions</li>
+                    <li>International team experience</li>
+                    <li>Strong communication skills</li>
+                    <li>Sense for industry trends</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
