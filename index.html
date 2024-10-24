@@ -2,18 +2,31 @@
 <html>
 <head>
     <title>Julia Baur Portfolio</title>
+    <!-- Google Fonts einbinden -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@400&display=swap" rel="stylesheet">
+    
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             margin: 40px;
             line-height: 1.6;
             color: #0462C1; /* Allgemeine Textfarbe auf Blau gesetzt */
+            font-weight: 400; /* Regular für allgemeinen Text */
         }
-        h1, h2 {
+        h1 {
             color: #FFA686; /* Überschriften in Rosaton */
+            font-family: 'Oswald', sans-serif; /* Oswald für H1 */
+            font-weight: 400; /* Standardgewicht von Oswald */
+        }
+        h2, h3, h4, h5, h6 {
+            color: #FFA686; /* Überschriften in Rosaton */
+            font-family: 'Montserrat', sans-serif; /* Montserrat für alle kleineren Überschriften */
+            font-weight: 700; /* Fett für H2-H6 */
+            text-transform: uppercase; /* Versalien für H2-H6 */
+            margin-top: 20px;
         }
         ul {
-            list-style-type: disc; /* Gefüllte Punkte statt Kreise */
+            list-style-type: disc; /* Gefüllte Punkte für Listen */
         }
         ul li::marker {
             color: #FFA686; /* Farbe der Aufzählungszeichen auf Rosaton gesetzt */
