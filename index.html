@@ -57,61 +57,58 @@
             max-width: 100%; /* Bild responsiv machen */
             height: auto; /* Höhe automatisch anpassen */
         }
+        .round-image {
+            width: 100%; /* Breite des Bildes auf 100% der Zelle setzen */
+            height: auto; /* Höhe automatisch anpassen */
+            border-radius: 50%; /* Runde Form */
+            object-fit: cover; /* Bild füllt den Ausschnitt aus */
+            border: 2px solid #FFA686; /* Optional: Rahmen um das Bild */
+        }
     </style>
 </head>
 <body>
     <h1>Hello World!</h1>
     
-    
     <table>
         <tr>
-            <td rowspan="2"><img src="dein-bild-link.jpg" alt="Bildbeschreibung"></td> <!-- Bild hier einfügen -->
-            <td></td>
-        </tr>
-        <tr>
-            <td>
-                <p>I am Julia.</p>
-    <p>
-        I am a creative and analytically minded Communication Designer with 6+ years of comprehensive experience in brand marketing and frontend development teams.<br>
-        Additionally, I hold a B.A. in Mass Communication and am currently completing a Professional Diploma in UX design.<br>
-        My professional vocation lies in user-centered visual content conception – whether digital or for print media – as well as information design and graphic design.<br>
-        Currently, I am seeking a new professional role in these or related fields that challenges my holistic and strategic thinking, ideally in a permanent position.<br>
-        I bring extensive experience with Adobe CC tools, creative ideation, and growing expertise in UX design to optimize online and print media.
-    </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                
+            <td rowspan="2">
+                <img src="images/JB-foto-2024-konter.png" alt="Bildbeschreibung" class="rundes-bild">
 
+            </td> 
+            <td colspan="2"> <!-- colspan für den einleitenden Text -->
+                <p>I am Julia.</p>
+                <p>
+                    I am a creative and analytically minded Communication Designer with 6+ years of comprehensive experience in brand marketing and frontend development teams.<br>
+                    Additionally, I hold a B.A. in Mass Communication and am currently completing a Professional Diploma in UX design.<br>
+                    My professional vocation lies in user-centered visual content conception – whether digital or for print media – as well as information design and graphic design.<br>
+                    Currently, I am seeking a new professional role in these or related fields that challenges my holistic and strategic thinking, ideally in a permanent position.<br>
+                    I bring extensive experience with Adobe CC tools, creative ideation, and growing expertise in UX design to optimize online and print media.
+                </p>
             </td>
-            <td> <tr>
-                    
-                <td>
-                    <h2>Professional Skills</h2>
-                    <ul>
-                        <li>Art Direction</li>
-                        <li>Creative Direction</li>
-                        <li>Graphic Design</li>
-                        <li>Retouching</li>
-                        <li>Photography</li>
-                        <li>Prepress</li>
-                        <li>Artwork</li>
-                    </ul>
-    
-                </td>
-                    <td>
-                    <h2>Soft Skills</h2>
-                     <ul>
+        </tr>
+        <tr>
+            <td> 
+                <h2>Soft Skills</h2>
+                <ul>
                     <li>Strong comprehension skills and high willingness to learn</li>
                     <li>Enthusiasm and openness to new ideas</li>
                     <li>Experience in interdisciplinary functions</li>
                     <li>International team experience</li>
                     <li>Strong communication skills</li>
                     <li>Sense for industry trends</li>
-                    </ul>
-                </td>
-                </tr>
+                </ul>
+            </td>
+            <td> 
+                <h2>Professional Skills</h2>
+                <ul>
+                    <li>Art Direction</li>
+                    <li>Creative Direction</li>
+                    <li>Graphic Design</li>
+                    <li>Retouching</li>
+                    <li>Photography</li>
+                    <li>Prepress</li>
+                    <li>Artwork</li>
+                </ul>
             </td>
         </tr>
     </table>
